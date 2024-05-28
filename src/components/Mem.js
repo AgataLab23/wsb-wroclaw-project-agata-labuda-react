@@ -1,9 +1,10 @@
-import dogAssaultImg from "./assets/images/mem-napad.jpg";
-import catHypnosisImg from "./assets/images/mem-kot-chomik.jpg";
-import hedgehogImg from "./assets/images/mem-jeż.jpg";
-import pandaImg from "./assets/images/mem-panda.jpg";
-import dogaccountantImg from "./assets/images/mem-pies-księgowy.jpg";
-import hamsterImg from "./assets/images/mem-chomik.jpg";
+import React from "react";
+import dogAssaultImg from "./images/mem-napad.jpg";
+import catHypnosisImg from "./images/mem-kot-chomik.jpg";
+import hedgehogImg from "./images/mem-jeż.jpg";
+import pandaImg from "./images/mem-panda.jpg";
+import dogaccountantImg from "./images/mem-pies-księgowy.jpg";
+import hamsterImg from "./images/mem-chomik.jpg";
 const memes = [
   {
     id: 1,
@@ -52,11 +53,11 @@ const memes = [
 const memeList = memes.map((meme) => (
   <h3 key={meme.id}>
     Title: {meme.title} Upvotes: {meme.upvotes} Downvotes: {meme.downvotes} Img:{" "}
-    {meme.img}
+    {meme.img} <button>upvote</button> <button>downvote</button>
   </h3>
 ));
 
-function memeArray() {
+export function Memes() {
   return (
     <>
       <h1>Memy ze zwierzętami</h1>

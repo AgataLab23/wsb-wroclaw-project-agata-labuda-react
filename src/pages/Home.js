@@ -50,10 +50,21 @@ const memes = [
   },
 ];
 
+// myClickAdd() {
+//   this.setState({ myNumber: this.state.myNumber +1 });
+// }
+
+// myClickMinus() {
+//   this.setState({ myNumber: this.state.myNumber -1 });
+// }
+
 const memeList = memes.map((meme) => (
   <h3 key={meme.id}>
-    Title: {meme.title} Upvotes: {meme.upvotes} Downvotes: {meme.downvotes} Img:{" "}
-    {meme.img}
+    Title: {meme.title} <br />
+    {meme.img} <br /> <button>upvote{meme.upvotes}</button>
+    <button>downvote {meme.downvotes}</button>
+    {/* <button onClick={this.myClickAdd.bind(this)}>upvote</button>{" "}
+    <button onClick={this.myClickMinus.bind(this)}>{meme.downvotes}</button> */}
   </h3>
 ));
 
@@ -64,4 +75,7 @@ export function Home() {
       <div>{memeList}</div>;
     </>
   );
+}
+export function Test() {
+  return <h1>Test</h1>;
 }
