@@ -55,3 +55,12 @@ const memeList = memes.map((meme) => (
     {meme.img}
   </h3>
 ));
+
+function memeArray() {
+  return (
+    <>
+      <h1>Memy ze zwierzętami</h1>
+      <div>{memeList}</div>;
+    </>
+  );
+}
