@@ -44,8 +44,14 @@ body {
 
 .meme {
   width: 300px;
+  border: 10px solid green;
 }
 
 .up {
   width: 20px;
+}
+
+button {
+  background-color: green;
+  width: 150px;
 }

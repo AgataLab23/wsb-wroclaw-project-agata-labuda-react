@@ -22,11 +22,11 @@ export function MemeItem({ meme }) {
       <h3>{meme.title}</h3>
       {meme.img}
       <br />
-      <button onClick={() => setUpvotes(upvotes + 1)}>
+      <button className="vote" onClick={() => setUpvotes(upvotes + 1)}>
         {" "}
         <img className="up" src={upvoteImg} alt="" />({upvotes})
       </button>
-      <button onClick={() => setDownvotes(downvotes + 1)}>
+      <button className="vote" onClick={() => setDownvotes(downvotes + 1)}>
         {" "}
         <img className="up" src={downvoteImg} alt="" />({downvotes})
       </button>
