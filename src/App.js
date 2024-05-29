@@ -3,6 +3,8 @@ import { Home } from "./pages/Home";
 import { Regular } from "./pages/Regular";
 import { Hot } from "./pages/Hot";
 import { NotFound } from "./pages/NotFound";
+import React from "react";
+import "./App.css";
 
 function App() {
   return (
