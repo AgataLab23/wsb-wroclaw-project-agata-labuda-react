@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { memes } from "./Mem";
+import downvoteImg from "./assets/images/downvote.png";
+import upvoteImg from "./assets/images/upvote.png";
 
 export function DisplayMeme() {
   return (
@@ -19,13 +21,14 @@ export function MemeItem({ meme }) {
     <div>
       <h3>{meme.title}</h3>
       {meme.img}
+      <br />
       <button onClick={() => setUpvotes(upvotes + 1)}>
         {" "}
-        Upvotes: ({upvotes})
+        <img className="up" src={upvoteImg} alt="" />({upvotes})
       </button>
       <button onClick={() => setDownvotes(downvotes + 1)}>
         {" "}
-        Downvotes: ({downvotes})
+        <img className="up" src={downvoteImg} alt="" />({downvotes})
       </button>
     </div>
   );

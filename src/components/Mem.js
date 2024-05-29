@@ -1,52 +1,53 @@
 import React from "react";
-import dogAssaultImg from "./assets/images/mem-pies-księgowy.jpg";
+import dogAssaultImg from "./assets/images/mem-napad.jpg";
 import catHypnosisImg from "./assets/images/mem-kot-chomik.jpg";
 import hedgehogImg from "./assets/images/mem-jeż.jpg";
 import pandaImg from "./assets/images/mem-panda.jpg";
 import dogaccountantImg from "./assets/images/mem-pies-księgowy.jpg";
 import hamsterImg from "./assets/images/mem-chomik.jpg";
+
 export const memes = [
   {
     id: 1,
-    title: "Mem 1",
+    title: "Uwaga, złodzieje!",
     upvotes: 6,
     downvotes: 0,
-    img: <img src={dogAssaultImg} alt="" />,
+    img: <img className="meme" src={dogAssaultImg} alt="" />,
   },
   {
     id: 2,
-    title: "Mem 2",
+    title: "Koteł hipnotyzer",
     upvotes: 1,
     downvotes: 2,
-    img: <img src={catHypnosisImg} alt="" />,
+    img: <img className="meme" src={catHypnosisImg} alt="" />,
   },
   {
     id: 3,
-    title: "Mem 3",
+    title: "Jeżo Cohello",
     upvotes: 1,
     downvotes: 0,
-    img: <img src={hedgehogImg} alt="" />,
+    img: <img className="meme" src={hedgehogImg} alt="" />,
   },
   {
     id: 4,
-    title: "Mem 4",
+    title: "Całe życie na diecie...",
     upvotes: 10,
     downvotes: 0,
-    img: <img src={pandaImg} alt="" />,
+    img: <img className="meme" src={pandaImg} alt="" />,
   },
   {
     id: 5,
-    title: "Mem 5",
+    title: "Pieseł księgowy",
     upvotes: 1,
     downvotes: 11,
-    img: <img src={dogaccountantImg} alt="" />,
+    img: <img className="meme" src={dogaccountantImg} alt="" />,
   },
   {
-    id: 6,
-    title: "Mem 6",
+    id: "6",
+    title: "Spanie to żyćko",
     upvotes: 1,
     downvotes: 11,
-    img: <img src={hamsterImg} alt="" />,
+    img: <img className="meme" src={hamsterImg} alt="" />,
   },
 ];
 

@@ -5,35 +5,33 @@ import { Hot } from "./pages/Hot";
 import { NotFound } from "./pages/NotFound";
 import React from "react";
 import "./App.css";
-
 function App() {
   return (
     <>
-      <nav>
+      <nav className="nav">
+        <a href="/" className="site-title">
+          Memy ze zwierzętami
+        </a>
         <ul>
           <li>
-            <button>
-              <NavLink
-                style={({ isActive }) => {
-                  return isActive ? { color: "red" } : {};
-                }}
-                to="/regular"
-              >
-                Regular
-              </NavLink>
-            </button>
+            <NavLink
+              style={({ isActive }) => {
+                return isActive ? { color: "green" } : {};
+              }}
+              to="/regular"
+            >
+              Regular
+            </NavLink>
           </li>
           <li>
-            <button>
-              <NavLink
-                style={({ isActive }) => {
-                  return isActive ? { color: "red" } : {};
-                }}
-                to="/hot"
-              >
-                Hot
-              </NavLink>
-            </button>
+            <NavLink
+              style={({ isActive }) => {
+                return isActive ? { color: "green" } : {};
+              }}
+              to="/hot"
+            >
+              Hot
+            </NavLink>
           </li>
         </ul>
       </nav>
