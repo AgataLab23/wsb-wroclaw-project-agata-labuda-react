@@ -18,7 +18,7 @@ export function MemeItem({ meme }) {
   const [downvotes, setDownvotes] = useState(meme.downvotes);
 
   return (
-    <div>
+    <div className="memeContainer">
       <h3>{meme.title}</h3>
       {meme.img}
       <br />

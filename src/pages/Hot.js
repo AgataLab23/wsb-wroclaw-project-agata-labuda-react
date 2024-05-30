@@ -1,5 +1,10 @@
 import React from "react";
+import { FilterArrayHot } from "../components/FilterArrayHot";
 
 export function Hot() {
-  return <h3>Hot</h3>;
+  return (
+    <>
+      <FilterArrayHot />
+    </>
+  );
 }

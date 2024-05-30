@@ -1,5 +1,7 @@
 import { memes } from "./Mem";
 
 export function FilterArrayHot() {
-  return <div></div>;
+  const hotArray = memes.filter((hot) => hot.upvotes - hot.downvotes > 5);
+
+  return console.log(hotArray);
 }
