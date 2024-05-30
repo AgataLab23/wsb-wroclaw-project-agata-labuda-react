@@ -9,9 +9,16 @@ function App() {
   return (
     <>
       <nav className="nav">
-        <a href="/" className="site-title">
+        <NavLink
+          style={({ isActive }) => {
+            return isActive ? { color: "green" } : {};
+          }}
+          to="/"
+          className="site-title"
+        >
           Memy ze zwierzętami
-        </a>
+        </NavLink>
+
         <ul>
           <li>
             <NavLink

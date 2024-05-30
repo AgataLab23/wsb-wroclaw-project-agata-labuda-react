@@ -38,10 +38,6 @@ body {
   gap: 1rem;
 }
 
-.nav li:hover {
-  background-color: #7ea181;
-}
-
 .meme {
   width: 300px;
   border: 10px solid green;
