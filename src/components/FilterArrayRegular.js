@@ -1,12 +1,12 @@
 import { memes } from "./Mem";
 import { MemeItem } from "./DisplayMeme";
 
-const hotArray = memes.filter((hot) => hot.upvotes - hot.downvotes > 5);
+const regularArray = memes.filter((hot) => hot.upvotes - hot.downvotes <= 5);
 
-export function HotMeme() {
+export function RegularMeme() {
   return (
     <div>
-      {hotArray.map((meme) => (
+      {regularArray.map((meme) => (
         <MemeItem key={meme.title} meme={meme} />
       ))}
     </div>

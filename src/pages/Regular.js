@@ -1,5 +1,6 @@
 import React from "react";
+import { RegularMeme } from "../components/FilterArrayRegular";
 
 export function Regular() {
-  return <h3>Regular</h3>;
+  return <RegularMeme />;
 }

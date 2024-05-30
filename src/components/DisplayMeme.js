@@ -3,6 +3,8 @@ import { memes } from "./Mem";
 import downvoteImg from "./assets/images/downvote.png";
 import upvoteImg from "./assets/images/upvote.png";
 
+// const hotArray = memes.filter((hot) => hot.upvotes - hot.downvotes > 5);
+
 export function DisplayMeme() {
   return (
     <div>
