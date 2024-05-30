@@ -14,7 +14,7 @@ body {
   justify-content: space-between;
   align-items: center;
   gap: 2rem;
-  padding: 0 1rem;
+  padding: 1rem;
 }
 
 .nav a {
@@ -23,11 +23,11 @@ body {
   height: 100%;
   display: flex;
   align-items: center;
-  padding: 0.25rem;
+  padding: 0.5rem;
 }
 
 .site-title {
-  font-size: 2rem;
+  font-size: 1.7rem;
 }
 
 .nav ul {
@@ -52,16 +52,23 @@ body {
 
 button.like {
   background-color: green;
+  border: 10px solid black;
   width: 450px;
 }
 
 button.dislike {
   background-color: red;
+  border: 10px solid black;
   width: 450px;
 }
 
 .title {
-  margin-top: 50px;
-  margin-left: auto;
-  margin-right: auto;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.buttonBox {
+  text-align: center;
+  padding: 0;
+  margin: 0;
 }

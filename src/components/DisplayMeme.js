@@ -24,15 +24,16 @@ export function MemeItem({ meme }) {
       {" "}
       <h3 className="title">{meme.title}</h3>
       {meme.img}
-      <br />
-      <button className="like" onClick={() => setUpvotes(upvotes + 1)}>
-        {" "}
-        <img className="up" src={upvoteImg} alt="" />({upvotes})
-      </button>
-      <button className="dislike" onClick={() => setDownvotes(downvotes + 1)}>
-        {" "}
-        <img className="up" src={downvoteImg} alt="" />({downvotes})
-      </button>
+      <section className="buttonBox">
+        <button className="like" onClick={() => setUpvotes(upvotes + 1)}>
+          {" "}
+          <img className="up" src={upvoteImg} alt="" />({upvotes})
+        </button>
+        <button className="dislike" onClick={() => setDownvotes(downvotes + 1)}>
+          {" "}
+          <img className="up" src={downvoteImg} alt="" />({downvotes})
+        </button>
+      </section>
     </div>
   );
 }
