@@ -5,43 +5,48 @@ import { Hot } from "./pages/Hot";
 import { NotFound } from "./pages/NotFound";
 import React from "react";
 import "./App.css";
+
 function App() {
   return (
     <>
-      <nav className="nav">
-        <NavLink
-          style={({ isActive }) => {
-            return isActive ? { color: "green" } : {};
-          }}
-          to="/"
-          className="site-title"
-        >
-          Memy ze zwierzętami
-        </NavLink>
+      <header className="sticky-header">
+        {" "}
+        <nav className="nav">
+          <NavLink
+            style={({ isActive }) => {
+              return isActive ? { color: "green" } : {};
+            }}
+            to="/"
+            className="site-title"
+          >
+            Memy ze zwierzętami
+          </NavLink>
 
-        <ul>
-          <li>
-            <NavLink
-              style={({ isActive }) => {
-                return isActive ? { color: "green" } : {};
-              }}
-              to="/regular"
-            >
-              Regular
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              style={({ isActive }) => {
-                return isActive ? { color: "green" } : {};
-              }}
-              to="/hot"
-            >
-              Hot
-            </NavLink>
-          </li>
-        </ul>
-      </nav>
+          <ul>
+            <li>
+              <NavLink
+                style={({ isActive }) => {
+                  return isActive ? { color: "green" } : {};
+                }}
+                to="/regular"
+              >
+                Regular
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                style={({ isActive }) => {
+                  return isActive ? { color: "green" } : {};
+                }}
+                to="/hot"
+              >
+                Hot
+              </NavLink>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/regular" element={<Regular />} />

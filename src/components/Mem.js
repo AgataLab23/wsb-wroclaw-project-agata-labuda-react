@@ -1,10 +1,10 @@
 import React from "react";
-import dogAssaultImg from "./assets/images/mem-napad.jpg";
-import catHypnosisImg from "./assets/images/mem-kot-chomik.jpg";
-import hedgehogImg from "./assets/images/mem-jeż.jpg";
-import pandaImg from "./assets/images/mem-panda.jpg";
-import dogaccountantImg from "./assets/images/mem-pies-księgowy.jpg";
-import hamsterImg from "./assets/images/mem-chomik.jpg";
+import dogAssaultImg from "../images/mem-napad.jpg";
+import catHypnosisImg from "../images/mem-kot-chomik.jpg";
+import hedgehogImg from "../images/mem-jeż.jpg";
+import pandaImg from "../images/mem-panda.jpg";
+import dogaccountantImg from "../images/mem-pies-księgowy.jpg";
+import hamsterImg from "../images/mem-chomik.jpg";
 
 export const memes = [
   {

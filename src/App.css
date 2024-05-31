@@ -5,6 +5,10 @@
 
 body {
   margin: 0;
+  background-image: url("../src/images/background-image.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 .nav {
@@ -15,6 +19,7 @@ body {
   align-items: center;
   gap: 2rem;
   padding: 1rem;
+  border-bottom: 4px solid grey;
 }
 
 .nav a {
@@ -65,10 +70,17 @@ button.dislike {
 .title {
   text-align: center;
   margin-top: 100px;
+  color: white;
+  text-shadow: 5px 5px 5px black;
 }
 
 .buttonBox {
   text-align: center;
   padding: 0;
   margin: 0;
+}
+
+.sticky-header {
+  position: sticky;
+  top: 0;
 }
