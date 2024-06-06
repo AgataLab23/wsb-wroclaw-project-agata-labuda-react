@@ -1,12 +1,39 @@
 import { NavLink, Route, Routes } from "react-router-dom";
 import { Home } from "./pages/Home";
-import { Regular } from "./pages/Regular";
-import { Hot } from "./pages/Hot";
+import { RegularMeme } from "./components/FilterArrayRegular";
+import { HotMeme } from "./components/FilterArrayHot";
 import { NotFound } from "./pages/NotFound";
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
+import { memes } from "./components/Mem";
 
 function App() {
+  const [allMemes, setMemes] = useState(memes);
+
+  const doUpvote = (memeId) => {
+    setMemes((memes) =>
+      memes.map((meme) => {
+        if (meme.id === memeId) {
+          return { ...meme, upvotes: meme.upvotes + 1 };
+        } else {
+          return meme;
+        }
+      })
+    );
+  };
+
+  const doDownvote = (memeId) => {
+    setMemes((memes) =>
+      memes.map((meme) => {
+        if (meme.id === memeId) {
+          return { ...meme, downvotes: meme.downvotes + 1 };
+        } else {
+          return meme;
+        }
+      })
+    );
+  };
+
   return (
     <>
       <header className="sticky-header">
@@ -49,8 +76,26 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/regular" element={<Regular />} />
-        <Route path="/hot" element={<Hot />} />
+        <Route
+          path="/regular"
+          element={
+            <RegularMeme
+              memes={allMemes}
+              doUpvote={doUpvote}
+              doDownvote={doDownvote}
+            />
+          }
+        />
+        <Route
+          path="/hot"
+          element={
+            <HotMeme
+              memes={allMemes}
+              doUpvote={doUpvote}
+              doDownvote={doDownvote}
+            />
+          }
+        />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </>

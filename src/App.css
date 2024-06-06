@@ -84,3 +84,7 @@ button.dislike {
   position: sticky;
   top: 0;
 }
+
+.notFound {
+  color: white;
+}

@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { Navigate, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 export function NotFound() {
   const navigate = useNavigate();
@@ -7,7 +7,11 @@ export function NotFound() {
   useEffect(() => {
     setTimeout(() => {
       navigate("/");
-    }, 2000);
-  }, []);
-  return <h1>Tu nie ma memów ze zwierzakami...wracasz na stronę główną :D</h1>;
+    }, 3000);
+  });
+  return (
+    <h1 className="notFound">
+      Tu nie ma memów ze zwierzakami...wracasz na stronę główną :D
+    </h1>
+  );
 }
