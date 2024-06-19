@@ -1,13 +1,16 @@
-import { memes } from "./Mem";
 import { MemeItem } from "./DisplayMeme";
 
-const hotArray = memes.filter((hot) => hot.upvotes - hot.downvotes > 5);
-
-export function HotMeme() {
+export function HotMeme({ memes, doUpvote, doDownvote }) {
+  const hotArray = memes.filter((hot) => hot.upvotes - hot.downvotes > 5);
   return (
     <div>
       {hotArray.map((meme) => (
-        <MemeItem key={meme.title} meme={meme} />
+        <MemeItem
+          key={meme.title}
+          meme={meme}
+          doUpvote={doUpvote}
+          doDownvote={doDownvote}
+        />
       ))}
     </div>
   );

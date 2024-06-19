@@ -1,5 +1,4 @@
 import { NavLink, Route, Routes } from "react-router-dom";
-import { Home } from "./pages/Home";
 import { RegularMeme } from "./components/FilterArrayRegular";
 import { HotMeme } from "./components/FilterArrayHot";
 import { NotFound } from "./pages/NotFound";
@@ -75,7 +74,16 @@ function App() {
       </header>
 
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route
+          path="/"
+          element={
+            <RegularMeme
+              memes={allMemes}
+              doUpvote={doUpvote}
+              doDownvote={doDownvote}
+            />
+          }
+        />
         <Route
           path="/regular"
           element={

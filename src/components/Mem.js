@@ -50,19 +50,3 @@ export const memes = [
     img: <img className="meme" src={hamsterImg} alt="" />,
   },
 ];
-
-// const memeList = memes.map((meme) => (
-//   <h3 key={meme.id}>
-//     Title: {meme.title} Upvotes: {meme.upvotes} Downvotes: {meme.downvotes} Img:{" "}
-//     {meme.img} <button>upvote</button> <button>downvote</button>
-//   </h3>
-// ));
-
-// export function Memes() {
-//   return (
-//     <>
-//       <h1>Memy ze zwierzętami</h1>
-//       <div>{memeList}</div>;
-//     </>
-//   );
-// }
